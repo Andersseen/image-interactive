@@ -200,7 +200,7 @@ function funMouse() {
       // using TweenMax.min.js by GSAP addin easing for radius for circle
     //   https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js
       let tween = TweenMax.to(circle, 0.25, {
-        radius: circle.radius * 3.5,
+        radius: circle.radius * 4.2,
         ease: Power1.easeInOut,
         paused: true
       });

@@ -23,7 +23,7 @@ figure{
     position: absolute;
 
     width: 200px;
-    height: 150px;
+    height: 200px;
     z-index: 10;
 
     -webkit-perspective: 500px;
@@ -41,7 +41,7 @@ figure{
 
 .icon > figure > img{
     position: absolute;
-    top: 60%;
+    top: 50%;
     left: 40%;
     width: 50px;
 
@@ -55,8 +55,10 @@ figure{
     font-size: 1rem;
     opacity: 0;
 
-    color: #000;
-    background-color: #ccc;
+    color: #fff;
+    background-color: #80acff;
+    text-shadow: 1px 1px 3px rgb(0 0 0 / 70%);
+
     border-radius: 20px;
     padding: 5%;
     
@@ -66,21 +68,22 @@ figure{
     transition: opacity .6s ease, top 1s ease, transform .8s ease;
 }
 .icon > figure:hover figcaption{
-    top: 10px;
+    top: 20px;
+    left: 2%;
     opacity: 1;
 
     transform: rotateY(10deg);
 }
 
 /* ICONS   */
-.icon__button{
-    top: 10%;
-    right: 50%;
+.icon__sign{
+    top: 15%;
+    right: 35%;
 }
 
 .icon__cctv{
-    top: 20%;
-    right: 30%;
+    top: 3%;
+    right: 12%;
 }
 
 
@@ -89,11 +92,23 @@ figure{
     left: 10%;
 }
 
+.icon__security{
+    top: 20%;
+    left: 20%;
+}
+
+.icon__idea{
+    top: 5%;
+    right: 30%;
+}
+
+
 /* IMAGE */
 
 img{
     border-radius: 50%;
     background-color: #003870;
+    padding: 3%;
 
     z-index: 10;
 
@@ -143,14 +158,18 @@ img.hovered:hover{
 
 .popup{
     background-color: #ffffff;
-    padding: 20px 30px;
+    padding: 1% 2% 2% 2%;
     width: 50%;
     border-radius: 15px;
+
+    display: flex;
+    flex-direction: column;
 
     transition: all 0.5s ease-in-out;
     transform-style: preserve-3d;
     transform: rotateY(-60deg);
 }
+
 .popup.present{
     transform: rotateY(0deg);
 }
@@ -161,9 +180,11 @@ img.hovered:hover{
     display: flex;
     justify-content: flex-end;
 }
-.popup__close a{
-    font-size: 1.2rem;
-    background-color: black;
+
+/* BUTTON CLOSE */
+/* .popup__close a{
+    font-size: 1rem;
+    background-color: #003870;
     color: #fff;
     padding: 5px 10px;
     font-weight: bold;
@@ -171,9 +192,45 @@ img.hovered:hover{
     border-radius: 10px;
     display: inline-block;
 }
+.popup__close a:hover{
+       
+} */
+
+.close__btn {
+    height: 50px;
+    width: 50px;
+    position: relative;
+    box-sizing: border-box;
+    line-height: 50px;
+    display: inline-block;
+  }
+  .close__btn:before, .close__btn:after {
+    transform: rotate(-45deg);
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -5px;
+    margin-left: -25px;
+    display: block;
+    height: 10px;
+    width: 50px;
+    background-color: #003870;
+    transition: all 0.25s ease-out;
+  }
+  .close__btn:after {
+    transform: rotate(-135deg);
+  }
+  .close__btn:hover:before, .close__btn:hover:after {
+    transform: rotate(0deg);
+  }
+
+
+
+
 .popup > h2{
     font-size: 1.6rem;
-    margin-bottom: 10px;
+    margin-bottom: 2%;
 }
 .popup > p{
     font-size: 1.2rem;
@@ -203,7 +260,7 @@ img.hovered:hover{
     box-shadow: none;
     width: 130px;
     line-height: 42px;
-    display: inline-block;
+    display: block;
 
     padding: 5px 15px;
 
@@ -211,7 +268,7 @@ img.hovered:hover{
     perspective: 230px;
   }
   .popup__btn span {
-    background: linear-gradient(0deg, #80acff 0%, #003870 100%);
+    background: #003870;
     display: block;
     color: #fff;
     font-size: 1rem;
