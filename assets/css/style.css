@@ -25,6 +25,8 @@ figure{
     width: 200px;
     height: 150px;
     z-index: 10;
+
+    -webkit-perspective: 500px;
     perspective: 500px;
     cursor: none;
 }
@@ -117,6 +119,8 @@ img.hovered:hover{
     
     height: 600px;
     width: 100%;
+
+    -webkit-perspective: 2000px;
     perspective: 2000px;
     position: absolute;
     top: 0;
@@ -173,9 +177,9 @@ img.hovered:hover{
 }
 .popup > p{
     font-size: 1.2rem;
-    margin-bottom: 10px;
+    margin-bottom: 3%;
 }
-.popup__btn{
+/* .popup__btn{
     display: inline-block;
     text-decoration: none;
     color: #000;
@@ -188,4 +192,66 @@ img.hovered:hover{
 .popup__btn:hover{
     background-color: black;
     color: #fff;
-}
+} */
+
+/* POPUP BUTTON */
+.popup__btn{
+    position: relative;
+    right: 20px;
+    bottom: 20px;
+    border:none;
+    box-shadow: none;
+    width: 130px;
+    line-height: 42px;
+    display: inline-block;
+
+    padding: 5px 15px;
+
+    -webkit-perspective: 230px;
+    perspective: 230px;
+  }
+  .popup__btn span {
+    background: linear-gradient(0deg, #80acff 0%, #003870 100%);
+    display: block;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 700;
+    position: absolute;
+    width: 130px;
+    height: 40px;
+    border-radius: 5px;
+    margin:0;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+  }
+  .popup__btn span:nth-child(1) {
+    -webkit-transform: rotateX(90deg);
+    -moz-transform: rotateX(90deg);
+    transform: rotateX(90deg);
+    -webkit-transform-origin: 50% 50% -20px;
+    -moz-transform-origin: 50% 50% -20px;
+    transform-origin: 50% 50% -20px;
+  }
+  .popup__btn span:nth-child(2) {
+    -webkit-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+    -webkit-transform-origin: 50% 50% -20px;
+    -moz-transform-origin: 50% 50% -20px;
+    transform-origin: 50% 50% -20px;
+  }
+  .popup__btn:hover span:nth-child(1) {
+    -webkit-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+  }
+  .popup__btn:hover span:nth-child(2) {
+   color: transparent;
+    -webkit-transform: rotateX(-90deg);
+    -moz-transform: rotateX(-90deg);
+    transform: rotateX(-90deg);
+  }

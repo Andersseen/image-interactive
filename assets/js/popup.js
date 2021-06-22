@@ -1,15 +1,15 @@
 const arrText = {
     'image-1': {
       'popup-title' : 'Wireless solutions',
-      'popup-text' : 'This is a custom popup. You can just put any content behind it. Also you can apply any custom style',
+      'popup-text' : 'Wireless long range transmission solutions that operate in the licence-free, 5GHz band providing an Ethernet channel of up to 1.3Gbps aggregate.',
     },
     'image-2': {
         'popup-title' : 'Video Analytic Solutions',
-        'popup-text' : 'This is a custom popup. You can just put any content behind it. Also you can apply any custom style',
+        'popup-text' : 'Intelligent video analysis solutions, based on high-performance software and available in various hardware formats.',
     },
     'image-3': {
         'popup-title' : 'Transmission solutions for every environment',
-        'popup-text' : 'This is a custom popup. You can just put any content behind it. Also you can apply any custom style',
+        'popup-text' : 'Reliable, simple and rugged solutions for data and video transmission in any environment.',
     },
 }
 
