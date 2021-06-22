@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- my styles -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Imagen-interactive</title>
+</head>
+<body>
+    
+    <!-- ICONS -->
+    <div class="icon__button icon">
+        <figure class="icon__wrapper">
+            <img id="image-button" class="img__button" src="./assets/images/icons/boton.svg" alt="logo">
+            <figcaption class="img__title">Wireless solutions</figcaption>
+        </figure>
+    </div>
+    <div class="icon__cctv icon">
+        <figure class="icon__wrapper">
+            <img id="image-cctv" class="img__cctv" src="./assets/images/icons/cctv.svg" alt="logo">
+            <figcaption class="img__title">Video Analytic Solutions</figcaption>
+        </figure>
+    </div>
+    <div class="icon__configuracion icon">
+        <figure class="icon__wrapper">
+            <img id="image-configuracion" class="img__configuracion" src="./assets/images/icons/configuracion.svg"alt="logo">
+            <figcaption class="img__title">Transmission solutions for every environment</figcaption>
+        </figure>
+    </div>
+
+    <!-- CANVAS -->
+    <canvas id="canvas">
+        <img src="./assets/images/bg.jpg" alt="canvas">
+    </canvas>
+
+    <!-- POPUP -->
+    <div id="popup">
+        <div class="popup__container">
+            <div class="popup">
+                <div class="popup__close" id="closeBtn"><a href="#">X</a></div>
+                <h2 class="text" key="popup-title"></h2>
+                <p class="text" key="popup-text"></p>
+                <a href="#" class="popup__btn">Ir a la enlace</a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- //biblioteca -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+    <!-- my script -->
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/popup.js"></script>
+</body>
+</html>
