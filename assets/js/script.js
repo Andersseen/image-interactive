@@ -1,30 +1,18 @@
 // create funMouse function 
 function funMouse() {
   
-  
-  
-  
     // get canvas
     const canvas = document.querySelector("#canvas");
     const canvasContext = canvas.getContext("2d");
   
-    
-    
-    
     // set canvas size
     let canvasWidth = (canvas.width = window.innerWidth);
     let canvasHeight = (canvas.height = 600);
-  
-    
-    
-    
+
     // get mouse position
     let mouseX = canvasWidth / 2;
     let mouseY = canvasHeight / 2;
-  
-    
-    
-    
+
     // create circles
     let circle = {
       radius: 12,
@@ -57,7 +45,7 @@ function funMouse() {
     var mouseRender = function mouseRender() {
       
         const imageBg = new Image();
-        imageBg.src = "./assets/images/bg.jpg";
+        imageBg.src = "./assets/images/bg1.jpg";
         // clear canvas so no colours or styles overlap
         canvasContext.drawImage(imageBg, 0, 0, canvasWidth, imageBg.height);
   
@@ -131,7 +119,7 @@ function funMouse() {
       // style mouse on hover function
       function on() {
         const imageBg = new Image();
-        imageBg.src = "./assets/images/bg.jpg";
+        imageBg.src = "./assets/images/bg1.jpg";
         imageBg.classList.add('image-bg');
         // clear canvas so no colours or styles overlap
         canvasContext.drawImage(imageBg, 0, 0, canvasWidth, imageBg.height);
@@ -159,7 +147,7 @@ function funMouse() {
       // i noticed if i don't do this then the on styles will stay even after hover
       function off() {
         const imageBg = new Image();
-        imageBg.src = "./assets/images/bg.jpg";
+        imageBg.src = "./assets/images/bg1.jpg";
         imageBg.classList.add('image-bg');
         // clear canvas so no colours or styles overlap
         canvasContext.drawImage(imageBg, 0, 0, canvasWidth, imageBg.height);
@@ -237,8 +225,7 @@ function funMouse() {
     
     //init the mouse function
     mouseInit();
-  }
+}
   
-  
-  // run fun mouse to have this cursor
-  funMouse();
+// run fun mouse to have this cursor
+funMouse();

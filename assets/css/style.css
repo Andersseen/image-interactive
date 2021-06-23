@@ -76,30 +76,64 @@ figure{
 }
 
 /* ICONS   */
-.icon__sign{
+
+/* ICON 1 */
+.icon__ladron{
+    top: 28%;
+    left: 40%;
+}
+/* ICON 2 */
+.icon__residencial{
     top: 15%;
-    right: 35%;
+    left: 5%;   
 }
 
+/* ICON 3 */
+.icon__hogar{
+    top: 25%;
+    left: 1%; 
+}
+
+/* ICON 4 */
 .icon__cctv{
     top: 3%;
     right: 12%;
 }
 
-
-.icon__configuracion{
-    top: 30%;
-    left: 10%;
+/* ICON 5 */
+.icon__idea{
+    top: 5%;
+    right: 30%;
 }
 
+/* ICON 6 */
 .icon__security{
     top: 20%;
     left: 20%;
 }
 
-.icon__idea{
-    top: 5%;
-    right: 30%;
+/* ICON 7 */
+.icon__parking{
+    top: 30%;
+    right: 2%;
+}
+
+/* ICON 8 */
+.icon__configuracion{
+    top: 30%;
+    left: 10%;
+}
+
+ /* ICON 9 */
+.icon__detector{
+    top: 10%;
+    right: 50%;
+}
+
+/* ICON 10 */
+.icon__sign{
+    top: 15%;
+    right: 35%;
 }
 
 
@@ -107,12 +141,12 @@ figure{
 
 img{
     border-radius: 50%;
-    background-color: #003870;
+    background-color: rgb(0, 56, 112);
     padding: 3%;
 
     z-index: 10;
 
-    transition: transform 1s ease, filter 1s ease;
+    transition: transform .5s ease, filter .5s ease;
 }
 img.filter{
     -webkit-filter: invert(90%) hue-rotate(175deg);
@@ -181,6 +215,7 @@ img.hovered:hover{
     justify-content: flex-end;
 }
 
+
 /* BUTTON CLOSE */
 /* .popup__close a{
     font-size: 1rem;
@@ -215,7 +250,7 @@ img.hovered:hover{
     display: block;
     height: 10px;
     width: 50px;
-    background-color: #003870;
+    background-color: rgb(0, 56, 112);
     transition: all 0.25s ease-out;
   }
   .close__btn:after {
@@ -262,7 +297,7 @@ img.hovered:hover{
     line-height: 42px;
     display: block;
 
-    padding: 5px 15px;
+    margin: 0 0 0 15px;
 
     -webkit-perspective: 230px;
     perspective: 230px;
@@ -312,3 +347,28 @@ img.hovered:hover{
     -moz-transform: rotateX(-90deg);
     transform: rotateX(-90deg);
   }
+
+
+
+    /* media query */
+@media screen and (max-width: 1200px) {
+    .popup > *{
+        padding-bottom: 1%;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .popup > *{
+        padding-bottom: 1.5%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .popup > *{
+        padding-bottom: 2%;
+    }
+}
+@media screen and (max-width: 800px) {
+    .popup > *{
+        padding-bottom: 2.5%;
+    }
+}
